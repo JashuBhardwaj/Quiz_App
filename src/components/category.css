@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+
+body{
+    background-color:black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding:0px;
+    color:aliceblue;
+    animation-name: heading;
+    animation-duration:10s;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    animation-iteration-count: infinite;
+    
+}
+
+.main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-45%);
+    box-shadow: 5px 5px 18px 10px rgb(0, 89, 255) ;
+    padding:20px;
+    min-width: 60vw;
+    max-height:80vh;
+    height: auto;
+    border-radius: 15px;
+    animation-name: animate;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate{
+    0% {box-shadow: 5px 5px 18px 10px rgb(0, 89, 255) ;}
+    10%{box-shadow: 5px 5px 18px 10px rgb(195, 0, 255) ;}
+    20%{box-shadow: 5px 5px 18px 10px rgb(60, 117, 238) ;}
+    30%{box-shadow: 5px 5px 18px 10px rgb(0, 183, 255) ;}
+    40%{box-shadow: 5px 5px 18px 10px rgb(24, 255, 113) ;}
+    50%{box-shadow: 5px 5px 18px 10px rgb(253, 210, 16) ;}
+    60%{box-shadow: 5px 5px 18px 10px rgb(248, 118, 12) ;}
+    70%{box-shadow: 5px 5px 18px 10px rgb(250, 58, 58) ;}
+    80%{box-shadow: 5px 5px 18px 10px rgb(0, 247, 255) ;}
+    90%{box-shadow: 5px 5px 18px 10px rgb(255, 99, 229) ;}
+    100%{box-shadow: 5px 5px 18px 10px rgb(248, 55, 161) ;}
+}
+
+.list{
+    border-radius: 20px;
+    margin:10px auto;
+    font-size:1.2em;
+    width:600px;
+    display:block;
+}
+
+.visible{
+    visibility: hidden;
+}
+i{
+    padding:5px;
+    margin-right: 5px;;
+    
+}
+
+li{
+    outline:none;
+    background-color:white;
+    color:black;
+    border:none;
+    transition:background-color 0.5s,color 0.5s ;
+}
+
+li:hover{
+    background-color:rgb(15, 73, 182);
+    color:white;
+    cursor: pointer;
+    border:1px solid rgb(74, 133, 243);
+}

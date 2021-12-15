@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #000000;
+  color: #e2e2e2;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+
+
+.heading{
+  top:-20px;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  color:aliceblue;
+  animation-name: heading;
+  animation-duration:10s;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  animation-iteration-count: infinite;
+  
+}
+.main{
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 5px 5px 18px 10px rgb(0, 89, 255) ;
+  margin:20px 0;
+  min-width: 60vw;
+  min-height:60vh;
+  height:auto;
+  border-radius: 15px;
+  animation-name: animate;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+}
+@keyframes animate{
+  0% {box-shadow: 5px 5px 18px 10px rgb(0, 89, 255) ;}
+  10%{box-shadow: 5px 5px 18px 10px rgb(195, 0, 255) ;}
+  20%{box-shadow: 5px 5px 18px 10px rgb(60, 117, 238) ;}
+  30%{box-shadow: 5px 5px 18px 10px rgb(0, 183, 255) ;}
+  40%{box-shadow: 5px 5px 18px 10px rgb(24, 255, 113) ;}
+  50%{box-shadow: 5px 5px 18px 10px rgb(253, 210, 16) ;}
+  60%{box-shadow: 5px 5px 18px 10px rgb(248, 118, 12) ;}
+  70%{box-shadow: 5px 5px 18px 10px rgb(250, 58, 58) ;}
+  80%{box-shadow: 5px 5px 18px 10px rgb(0, 247, 255) ;}
+  90%{box-shadow: 5px 5px 18px 10px rgb(255, 99, 229) ;}
+  100%{box-shadow: 5px 5px 18px 10px rgb(248, 55, 161) ;}
+}
+
+.list{
+    border-radius: 200px;
+    margin:60px auto;
+    font-size:1.2em;
+    width:300px;
+    display:block;
+}
+
+.visible{
+    visibility: hidden;
+}
+i{
+    padding:5px;
+    margin-right: 5px;
+}
+span{
+    margin-left:25%;
+}
+li{
+    outline:none;
+    background-color:white;
+    color:black;
+    border:none;
+    transition:background-color 0.5s,color 0.5s ;
+}
+
+li:hover{
+    background-color:rgb(15, 73, 182);
+    color:white;
+    cursor: pointer;
+    border:1px solid rgb(74, 133, 243);
+}

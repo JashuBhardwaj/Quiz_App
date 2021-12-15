@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ 
+<style>
+ 
+  
+
+.b-skills
+{
+border-top: 1px solid #f9f9f9;
+padding-top: 46px;
+text-align: center;
+}
+
+.b-skills:last-child { margin-bottom: -30px; }
+
+.b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+
+.skill-item
+{
+position: relative;
+max-width: 250px;
+width: 100%;
+margin-bottom: 30px;
+color: #555;
+}
+
+.chart-container
+{
+position: relative;
+width: 100%;
+height: 0;
+padding-top: 100%;
+margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100% ;
+height: 100% ;
+}
+
+.skill-item .chart:before
+{
+content: "";
+width: 0;
+height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+display: inline-block;
+vertical-align: middle;
+}
+
+.skill-item .percent
+{
+position: relative;
+line-height: 1;
+font-size: 40px;
+font-weight: 900;
+z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+content: attr(data-after);
+font-size: 20px;
+}
+    
+p{
+        font-weight: 900;
+    }
+
+ 
+.h2{
+align-content: center;
+margin-left: -2000px;
+}
+ </style>
+<script src="plugins/jquery-2.2.4.min.js"></script>
+<script src="plugins/jquery.appear.min.js"></script>
+<script src="plugins/jquery.easypiechart.min.js"></script> 
+<script>
+ 
+
+var $window = $(window);
+
+function run()
+{
+var fName = arguments[0],
+ aArgs = Array.prototype.slice.call(arguments);
+try {
+ fName.apply(window, aArgs);
+} catch(err) {
+  
+}
+};
+
+/* chart
+================================================== */
+function _chart ()
+{
+$('.b-skills').appear(function() {
+ setTimeout(function() {
+   $('.chart').easyPieChart({
+     
+     delay: 3000,
+     
+     
+     
+     lineWidth: 30,
+     size: 300,
+     
+     onStep: function(from, to, percent) {
+       this.el.children[0].innerHTML = Math.round(percent);
+     }
+   });
+ }, 150);
+});
+};
+
+
+$(document).ready(function() {
+
+run(_chart);
+
+ 
+});
+
+
+ 
+ </script>
+<script src="https://kit.fontawesome.com/56597a0a74.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>React Quiz</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>
